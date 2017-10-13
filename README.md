@@ -7,3 +7,5 @@ Here will store my python scripts written while daily work.
 [multiplot.py](multiplot.py) is a demo to use threads to close figure window automatically.
 
 [slider.py](slider.py) is a demo use slider to control parameter in plt.
+
+[douban.ipynb](douban.ipynb) is a demo show how to crawl comments of movies online and generate a wordcloud.
