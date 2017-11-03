@@ -12,5 +12,5 @@ Here will store my python scripts written while daily work.
 
 [crop_and_save.py](crop_and_save.py) use os.walk recursively find images in a directory and crop two piece of 180x180 from them.
 
-[college_ranking.ipynb](college ranking.ipynb)展示了一个网页定向爬虫爬取“中国最好大学”排名
+[college_ranking.ipynb](college\ ranking.ipynb)展示了一个网页定向爬虫爬取“中国最好大学”排名
 
