@@ -1,4 +1,4 @@
-# My_python_demo
+﻿# My_python_demo
 
 Here will store my python scripts written while daily work.
 
@@ -15,4 +15,6 @@ Here will store my python scripts written while daily work.
 [college_ranking.ipynb](college_ranking.ipynb)展示了一个网页定向爬虫爬取“中国最好大学”排名
 
 [geojson.py](geojson.py)是一个利用google map的api获取位置的完整地理信息，并用json进行提取的示例
+
+[credit_card.py](credit_card.py) is a demo to show vertification algorithm of American Express credit card number.
 
