@@ -18,3 +18,4 @@ Here will store my python scripts written while daily work.
 
 [credit_card.py](credit_card.py) is a demo to show vertification algorithm of American Express credit card number.
 
+[zero_init.py](zero_init.py)用一个两层神经网络说明了，多层神经网络初始化权重全部为零会使得隐藏层每个神经元的计算结果相同，导致隐藏层多个神经元的作用和一个神经元一样。可以发现w1的每一行为相同数字。
