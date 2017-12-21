@@ -5,13 +5,13 @@ x = tf.placeholder(tf.float32, [1,2], name='x')
 y = tf.placeholder(tf.float32, [1,1], name='y')
 # First layer
 with tf.variable_scope('Layer1'):
-	b1 = tf.Variable(tf.zeros([1,2]), name='b1')
-	w1 = tf.Variable(tf.zeros([2,2]), name='w1')
-	h1 = tf.sigmoid(tf.matmul(x, w1) + b1)
+	b1 = tf.Variable(tf.ones([1,2]), name='b1')
+	w1 = tf.Variable(tf.ones([2,2]), name='w1')
+	h1 = tf.nn.relu(tf.matmul(x, w1) + b1)
 # Second layer
 with tf.variable_scope('Layer2'):
-	w2 = tf.Variable(tf.zeros([2,1]), name='w2')
-	b2 = tf.Variable(tf.zeros([1,1]), name='b2')
+	w2 = tf.Variable(tf.ones([2,1]), name='w2')
+	b2 = tf.Variable(tf.ones([1,1]), name='b2')
 	h2 = tf.matmul(h1, w2) + b2
 loss = (y - h2)**2
 train_op = tf.train.GradientDescentOptimizer(0.01).minimize(loss)
