@@ -23,3 +23,5 @@ Here will store my python scripts written while daily work.
 [chart.py](chart.py)can draw a simple bar plot using "ascii art", Very funny:)
 
 [wiki_link.py](wiki_link.py)是一递归访问维基百科链接的demo。
+
+[wiki_start.py](wiki_start.py)是一个从危机百科首页递归访问全部链接的demo。
