@@ -21,3 +21,5 @@ Here will store my python scripts written while daily work.
 [zero_init.py](zero_init.py)用一个两层神经网络说明了，多层神经网络初始化权重全部为零会使得隐藏层每个神经元的计算结果相同，导致隐藏层多个神经元的作用和一个神经元一样。可以发现w1的每一行为相同数字。
 
 [chart.py](chart.py)can draw a simple bar plot using "ascii art", Very funny:)
+
+[wiki_link.py](wiki_link.py)是一递归访问维基百科链接的demo。
