@@ -33,3 +33,5 @@ Here will store my python scripts written while daily work.
 [crawl_external_links.py](crawl_external_links.py)是一个从一个站点开始递归获取所有外部链接的demo。
 
 [merge_sort.py](merge_sort.py) is a demo of merge sort.
+
+[Dijkstra.py](Dijkstra.py) 是一个狄克斯特拉算法的demo。
