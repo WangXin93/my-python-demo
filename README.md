@@ -35,3 +35,5 @@ Here will store my python scripts written while daily work.
 [merge_sort.py](merge_sort.py) is a demo of merge sort.
 
 [Dijkstra.py](Dijkstra.py) 是一个狄克斯特拉算法的demo。
+
+[skeleton](skeleton) 是一个自动创建python skeleton的工具，使用方法为`./mkskl.py dir1/proj1`。
