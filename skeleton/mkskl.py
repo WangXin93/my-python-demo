@@ -47,6 +47,14 @@ def setup_tests():
     with open(os.path.join(project, "tests", "setup_tests.py"), "w") as f:
         f.write(setup_tests)
 
+    # touch d1/a1/.gitignore
+    touch(os.path.join(project, '.gitignore'))
+    ignore_contents = """*.pyc
+__pychche__
+"""
+    with open(os.path.join(project, '.gitignore'), 'w') as f:
+        f.write(ignore_contents)
+    # Print done.
     print(project + " SETUP done!")
 
 if __name__ == "__main__": 
