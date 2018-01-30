@@ -54,6 +54,9 @@ __pychche__
 """
     with open(os.path.join(project, '.gitignore'), 'w') as f:
         f.write(ignore_contents)
+
+    # touch d1/a1/README.md
+    touch(os.path.join(project, 'README.md'))
     # Print done.
     print(project + " SETUP done!")
 
