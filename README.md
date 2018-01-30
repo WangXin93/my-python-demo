@@ -39,3 +39,5 @@ Here will store my python scripts written while daily work.
 [skeleton](skeleton) 是一个自动创建python skeleton的工具，使用方法为`./mkskl.py dir1/proj1`。
 
 [sqlite_student](sqlite_student)是一个使用sqlite3对数据库进行操作的demo。
+
+[flask_lucky_number](flask_lucky_number)是使用flask在浏览器上向用户随机显示一个lucky number。
