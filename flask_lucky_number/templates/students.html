@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <ul>
+            <li>Name - Username - Id</li>
+            {% for student in all_students %}
+            <li>{{ student[0] }} - {{ student[1] }} - {{ student[1] }}</li>
+            {% endfor %}
+        </ul>
+    </body>
+</html>
+
