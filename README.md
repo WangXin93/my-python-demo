@@ -24,7 +24,7 @@ Here will store my python scripts written while daily work.
 
 [wiki_link.py](wiki_link.py)是一递归访问维基百科链接的demo。
 
-[wiki_start.py](wiki_start.py)是一个从危机百科首页递归访问全部链接的demo。
+[wiki_start.py](wiki_start.py)是一个从维基百科首页递归访问全部链接的demo。
 
 [graph_and_BFS.py](graph_and_BFS.py)是一个图模型和广度优先搜索的实现。
 
@@ -41,3 +41,5 @@ Here will store my python scripts written while daily work.
 [sqlite_student](sqlite_student)是一个使用sqlite3对数据库进行操作的demo。
 
 [flask_lucky_number](flask_lucky_number)是使用flask在浏览器上向用户随机显示一个lucky number。
+
+[sixteen](sixteen) is a puzzle game called sixteen.

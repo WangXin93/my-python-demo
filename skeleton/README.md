@@ -2,7 +2,7 @@
 ```
 $ ./mkskl.py somedir/projectName
 ```
-`./mkskl.py ~/proj` can build project skeleton like this:
+$ `./mkskl.py ~/proj` can build project skeleton like this:
 ```
 $ tree -a ~/proj
 proj
