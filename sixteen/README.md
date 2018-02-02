@@ -6,5 +6,5 @@ Move pane to reach the target:
      [ 9 10 11 12]
      [13 14 15  0]]
 
-![Interface](sixteen/inferface.gif)
+![Interface](https://github.com/WangXin93/My_python_demo/blob/master/sixteen/interface.gif)
 
