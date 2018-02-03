@@ -41,3 +41,5 @@ Here will store my python scripts written while daily work.
 [sqlite_student](sqlite_student)是一个使用sqlite3对数据库进行操作的demo。
 
 [flask_lucky_number](flask_lucky_number)是使用flask在浏览器上向用户随机显示一个lucky number。
+
+[flask_blog](flask_blog)是一个基于flask的个人博客服务器demo，参考《Learn More Python the Hard Way》。
