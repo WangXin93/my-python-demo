@@ -55,5 +55,6 @@ Here will store my python scripts written while daily work.
 * [Python最佳实践指南！](http://pythonguidecn.readthedocs.io/zh/latest/index.html): Requests作者讲述Python的优秀时间和介绍Python资源
 * Python网络数据采集：讲述爬虫技术，第一章爬虫基础的教学非常优秀，理论结合实践学习爬虫，第二章高级技术需跟随目前技术发展自行拓展学习
 * Flask Web 开发：基于Python的Web应用开发实战
+* [Python 3 Module of the Week](https://pymotw.com/3/)用一些列文章展示了如何使用Python3标准库的各个模块
 * Udacity Git tutorial
 * Udemy Machine Learning
