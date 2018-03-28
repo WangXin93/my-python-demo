@@ -46,7 +46,7 @@ def AutoDoWork(can_do):
                 yield [i] + j
 #list(AutoDoWork(tree['Bath']))
 #list(AutoDoWork(tree['Exercise']))
-print(len(list(AutoDoWork(tree['Get Up'])))
+print(len(list(AutoDoWork(tree['Get Up']))))
 
 
 
