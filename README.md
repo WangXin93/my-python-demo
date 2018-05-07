@@ -48,6 +48,10 @@ Here will store my python scripts written while daily work.
 
 [scrape_allitebooks](scrape_allitebooks) 使用Scrapy爬去网站www.allitebooks.com的所有书籍的url。
 
+[mypytorch](mypytorch) 使用PyTorch展示了Numpy风格反向传播和Pytorch风格反向传播的区别，展示了自动计算梯度降的用处。
+
+[BFS](BFS) 是一个使用广度优先搜索自动求解迷宫的方法，同时展示了pytest单元测试的基本用法。
+
 # Resources
 * 趣学Python，假定读者是个孩子一样从头学习Python，跟随本书可以写出一个火柴人游戏以及掌握Python语法和基本编程思想
 * Learn Python the Hard Way， 非常好同时学习计算机思维和Python语法的书，跟随本书可以从学习命令行操作到学习web下显示一个显示一个hello，world
@@ -57,5 +61,6 @@ Here will store my python scripts written while daily work.
 * Flask Web 开发：基于Python的Web应用开发实战
 * [Python 3 Module of the Week](https://pymotw.com/3/)用一些列文章展示了如何使用Python3标准库的各个模块
 * 图解算法， 用最直观的方式讲述基本算法和数据结构比如数组，链表，散列表，图结构，树结构，贪婪算法等，书中的实现方法均基于Python。
+* [Python3 Standard Library by Example](https://pymotw.com/3/)是展示Python3各个标准库用法的系列博客。
 * Udacity Git tutorial
 * Udemy Machine Learning
