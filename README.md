@@ -2,6 +2,8 @@
 
 Here will store my python scripts written while daily work.
 
+[basic](basic) Python语言与程序结构基础。
+
 [copy_file.py](copy_file.py) is a demo to copy files between directories.
 
 [multiplot.py](multiplot.py) is a demo to use threads to close figure window automatically.
