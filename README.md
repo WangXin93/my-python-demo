@@ -58,6 +58,8 @@ Here will store my python scripts written while daily work.
 
 [genwave.py](genwave.py) 用python来制作电子音乐，这里将mario音乐写入一个wav文件。
 
+[PSO.py](PSO.py)是一个粒子群优化算法（Particle Swarm Optimization）的示例文件。
+
 # Resources
 * 趣学Python，假定读者是个孩子一样从头学习Python，跟随本书可以写出一个火柴人游戏以及掌握Python语法和基本编程思想
 * Learn Python the Hard Way， 非常好同时学习计算机思维和Python语法的书，跟随本书可以从学习命令行操作到学习web下显示一个显示一个hello，world
