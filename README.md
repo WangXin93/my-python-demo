@@ -64,6 +64,8 @@ Here will store my python scripts written while daily work.
 
 [ten_steps_to_keras.py](ten_steps_to_keras.py)是一个Keras的MNIST训练示例，同时展示了用TSNE显示中间层特征的分布。
 
+[tkBasic.py](tkBasic.py)是一个tkinter的gui基础页面，包含canvas，entry，label，button这几个基本widget。
+
 # Resources
 * 趣学Python，假定读者是个孩子一样从头学习Python，跟随本书可以写出一个火柴人游戏以及掌握Python语法和基本编程思想
 * Learn Python the Hard Way， 非常好同时学习计算机思维和Python语法的书，跟随本书可以从学习命令行操作到学习web下显示一个显示一个hello，world
