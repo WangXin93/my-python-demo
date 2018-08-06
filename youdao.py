@@ -16,7 +16,7 @@ if __name__ == "__main__":
     print(word)
     print('='*79)
     url = 'https://www.youdao.com/w/{}/#keyfrom=dict2.top'.format(word)
-    xpath = '//*[@id="phrsListTab"]/div[2]//li/text()'
+    xpath = '//*[@id="phrsListTab"]//div[@class="trans-container"]/ul/li/text()'
 
     page = requests.get(url)
     tree = html.fromstring(page.content)
@@ -27,7 +27,7 @@ if __name__ == "__main__":
     for r in results:
         print(r)
 
-    print('网络释义:')
+    print('网络释义：')
     results = tree.xpath('//div[@id="tWebTrans"]/div[not(@id)]//div[@class="title"]//span/text()')
     for r in results:
         print(r.strip())
