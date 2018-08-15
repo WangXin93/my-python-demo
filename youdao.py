@@ -98,6 +98,6 @@ if __name__ == "__main__":
     original = sys.argv[1:]
 
     if len(original) == 1:
-        translate_word(word)
+        translate_word(original[0])
     elif len(original) > 1:
         translate_sentence(' '.join(original))
