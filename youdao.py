@@ -11,60 +11,45 @@ try:
 except:
     pass
 
-def translate_word(word):
+def translate(source):
     print('='*49)
-    print(word)
+    print(source)
     print('='*49)
 
     #######################
     #     Parse Text      #
     #######################
-    url = 'https://www.youdao.com/w/{}/#keyfrom=dict2.top'.format(word)
+    source = urllib.parse.quote(source)
+    url = 'https://www.youdao.com/w/{}/#keyfrom=dict2.top'.format(source)
+    page = requests.get(url)
+    tree = html.fromstring(page.content)
+
     xpath = '//*[@id="phrsListTab"]//div[@class="trans-container"]/ul/li/text()'
-
-    page = requests.get(url)
-    tree = html.fromstring(page.content)
     results = tree.xpath(xpath)
+    # Print results for word
+    if results:
+        print('有道翻译：')
+        for r in results:
+            print(r)
 
-    # Print results
-    print('有道翻译：')
-    for r in results:
-        print(r)
+    xpath = '//div[@id="tWebTrans"]/div[not(@id)]//div[@class="title"]//span/text()'
+    results = tree.xpath(xpath)
+    if results:
+        print('网络释义：')
+        for r in results:
+            print(r.strip())
 
-    print('网络释义：')
-    results = tree.xpath('//div[@id="tWebTrans"]/div[not(@id)]//div[@class="title"]//span/text()')
-    for r in results:
-        print(r.strip())
-    print('='*49)
-
-    play_voice(word)
-
-
-def translate_sentence(sentence):
-    print('='*49)
-    print(sentence)
-    print('='*49)
-    sentence = urllib.parse.quote(sentence)
-
-    #######################
-    #     Parse Text      #
-    #######################
-    url = 'https://www.youdao.com/w/{}/#keyfrom=dict2.top'.format(sentence)
     xpath ='//*[@id="fanyiToggle"]/div/p[2]/text()'
-
-    page = requests.get(url)
-    tree = html.fromstring(page.content)
     results = tree.xpath(xpath)
-
-    # Print results
-    print('有道翻译：')
-    for r in results:
-        print(r)
+    # Print results for sentence
+    if results:
+        print('有道机器翻译：')
+        for r in results:
+            print(r)
 
     print('='*49)
 
-    play_voice(sentence)
-
+    play_voice(source)
 
 
 #######################
@@ -95,9 +80,9 @@ if __name__ == "__main__":
     out, err = process.communicate()
     print(out.decode())
 
-    original = sys.argv[1:]
+    source = sys.argv[1:]
 
-    if len(original) == 1:
-        translate_word(original[0])
-    elif len(original) > 1:
-        translate_sentence(' '.join(original))
+    if len(source) == 1:
+        translate(source[0])
+    elif len(source) > 1:
+        translate(' '.join(source))
