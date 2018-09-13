@@ -72,6 +72,9 @@ Here will store my python scripts written while daily work.
 
 [python_expert](python_expert/)记录[PyData 2017的讲座](https://www.youtube.com/watch?v=7lmCu8wz8ro)关于Python中Data model，decorator，metaclass，generator的使用的笔记。
 
+[CGAN-fashion-mnist.py](CGAN-fashion-mnist.py)是一个CGAN的demo根据fashoin种类条件生成服饰图像。
+
+
 # Resources
 * 趣学Python，假定读者是个孩子一样从头学习Python，跟随本书可以写出一个火柴人游戏以及掌握Python语法和基本编程思想
 * Learn Python the Hard Way， 非常好同时学习计算机思维和Python语法的书，跟随本书可以从学习命令行操作到学习web下显示一个显示一个hello，world
