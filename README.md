@@ -74,6 +74,8 @@ Here will store my python scripts written while daily work.
 
 [CGAN-fashion-mnist.py](CGAN-fashion-mnist.py)是一个CGAN的demo根据fashoin种类条件生成服饰图像。
 
+[My Generating Names with a Character-Level RNN.ipynb](My Generating Names with a Character-Level RNN.ipynb)是一个使用rnn生成名字的demo，可以以名字的国家作为条件生成名字。
+
 
 # Resources
 * 趣学Python，假定读者是个孩子一样从头学习Python，跟随本书可以写出一个火柴人游戏以及掌握Python语法和基本编程思想
