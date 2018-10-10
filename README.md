@@ -76,6 +76,8 @@ Here will store my python scripts written while daily work.
 
 [My Generating Names with a Character-Level RNN.ipynb](My%20Generating%20Names%20with%20a%20Character-Level%20RNN.ipynb)是一个使用rnn生成名字的demo，可以以名字的国家作为条件生成名字。
 
+[AE.ipynb](AE.ipynb)是一个用pytorch写的autoencoder的demo，参考了博客<https://towardsdatascience.com/a-wizards-guide-to-adversarial-autoencoders-part-1-autoencoder-d9a5f8795af4>。
+
 
 # Resources
 * 趣学Python，假定读者是个孩子一样从头学习Python，跟随本书可以写出一个火柴人游戏以及掌握Python语法和基本编程思想
