@@ -78,6 +78,7 @@ Here will store my python scripts written while daily work.
 
 [adversarial_autoencoder](adversarial_autoencoder)是一个用pytorch写的autoencoder, adversarial autoencoder, conditional adversarial autoencoder的demo，参考了博客<https://towardsdatascience.com/a-wizards-guide-to-adversarial-autoencoders-part-1-autoencoder-d9a5f8795af4>。
 
+[naive_bayes](naive_bayes)是一个naive bayes模型的demo，包括Gaussian NB，和Beta NB两个demo。
 
 # Resources
 * 趣学Python，假定读者是个孩子一样从头学习Python，跟随本书可以写出一个火柴人游戏以及掌握Python语法和基本编程思想
