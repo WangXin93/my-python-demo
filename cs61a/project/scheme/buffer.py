@@ -125,3 +125,4 @@ class LineReader:
                 self.prompt = ' ' * len(self.prompt)
             yield line
         raise EOFError
+

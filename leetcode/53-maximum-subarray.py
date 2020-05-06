@@ -53,3 +53,6 @@ def test_answer():
     assert sol.dc_max_subarray([-1, 3, 4, -5, 9, -2]) == 11
     assert sol.kadane_max_subarray([-1, 3, 4, -5, 9, -2]) == 11
     assert sol.bf_max_subarray([-1, 3, 4, -5, 9, -2]) == 11
+
+if __name__ == "__main__":
+    test_answer()

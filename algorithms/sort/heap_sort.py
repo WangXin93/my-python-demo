@@ -83,14 +83,12 @@ def heap_sort(lst):
         right = 2*start + 2
 
         swap_pos = None
-        if left <= end:
-            if lst[start] < lst[left]:
-                if right > end or lst[left] > lst[right]:
-                    swap_pos = left
-                elif lst[right] > lst[left]:
-                    swap_pos = right
-            elif right <= end and lst[start] < lst[right]:
-                swap_pos = right
+        if left > end:
+            return
+        if right > end or lst[left] > lst[right]:
+            swap_pos = left
+        else:
+            swap_pos = right
 
         if swap_pos:
             temp = lst[start]
@@ -101,7 +99,7 @@ def heap_sort(lst):
     # Bottom-up heapify the array
     for k in range(len(lst)-1, -1, -1):
         sink(k, len(lst)-1)
-        print(lst)
+        # print(lst)
 
     # Delete the head of the heap, delete the last item from the heap, swap
     # the last item in the root, and sink(0)
