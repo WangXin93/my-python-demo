@@ -1,5 +1,7 @@
 ﻿# My_python_demo
 
+[![Run on Repl.it](https://repl.it/badge/github/WangXin93/my-python-demo)](https://repl.it/github/WangXin93/my-python-demo)
+
 Here will store my python scripts written while daily work.
 
 [basic](basic) Python语言与程序结构基础。
