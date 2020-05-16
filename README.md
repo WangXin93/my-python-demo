@@ -1,9 +1,6 @@
 # My_python_demo
 
-[![Run on Repl.it](https://repl.it/badge/github/WangXin93/my-python-demo)](https://repl.it/github/WangXin93/my-python-demo)
-
-[![Gitpod Ready-to-Code](https://img.shields.io/badge/Gitpod-Ready--to--Code-blue?logo=gitpod)](https://gitpod.io/#https://github.com/WangXin93/my-python-demo) 
-
+[![Run on Repl.it](https://repl.it/badge/github/WangXin93/my-python-demo)](https://repl.it/github/WangXin93/my-python-demo) [![Gitpod Ready-to-Code](https://img.shields.io/badge/Gitpod-Ready--to--Code-blue?logo=gitpod)](https://gitpod.io/#https://github.com/WangXin93/my-python-demo) 
 
 Here will store my python scripts written while daily work.
 
