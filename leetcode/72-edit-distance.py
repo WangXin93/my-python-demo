@@ -1,5 +1,7 @@
 """ Edit distance
 https://leetcode.com/problems/edit-distance/
+https://www.wikiwand.com/en/Levenshtein_distance
+https://rosettacode.org/wiki/Levenshtein_distance
 """
 from functools import wraps
 
