@@ -1,20 +1,20 @@
 from graph import digraph_from_file
 
 
-def dfs(g):
+def dfs(g, order="post"):
     marked = set()
 
     def dfs_preorder(node):
+        marked.add(node)
         print(node)
         for child in g[node]:
             if child not in marked:
-                marked.add(child)
                 dfs_preorder(child)
 
     def dfs_postorder(node):
+        marked.add(node)
         for child in g[node]:
             if child not in marked:
-                marked.add(child)
                 dfs_postorder(child)
         print(node)
 
