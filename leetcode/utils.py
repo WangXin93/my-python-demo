@@ -1,4 +1,5 @@
 import json
+from typing import List
 
 # Definition for a linked list node.
 class ListNode:
