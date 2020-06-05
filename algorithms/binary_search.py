@@ -21,6 +21,7 @@ If you implement recursive version binary search, take care of the recursion tim
 * binary search for float points
 """
 
+
 def binary_contains(lst, value):
     """
     >>> binary_contains([0, 1, 2, 4, 6, 7, 8], 3)
@@ -38,6 +39,7 @@ def binary_contains(lst, value):
         elif lst[mid] < value:
             left = mid + 1
     return False
+
 
 def binary_contains_recursive(lst, value):
     """
@@ -61,6 +63,8 @@ def binary_contains_recursive(lst, value):
 """
 Another version of binary search. It only has two branch in the control flow.
 
+Interestingly, this method helps to find the left most or the right most element in a sorted array.
+
 Example:
 
 0, 1, 3, 4 find(2) left right  mid
@@ -69,12 +73,14 @@ Example:
                     2.   2.
 """
 
-def binary_contains_v2(lst, value):
+
+def binary_contains_left(lst, value):
     """
-    >>> binary_contains_v2([0, 1, 2, 4, 6, 7, 8], 3)
-    False
-    >>> binary_contains_v2([0, 1, 2, 4, 6, 7, 8], 4)
-    True
+    >>> binary_contains_left([0, 1, 2, 4, 6, 7, 8], 3)
+    >>> binary_contains_left([0, 1, 2, 4, 6, 7, 8], 4)
+    3
+    >>> binary_contains_left([0, 1, 1], 1)
+    1
     """
     left, right = 0, len(lst)-1
     while left < right:
@@ -83,14 +89,15 @@ def binary_contains_v2(lst, value):
             left = mid + 1
         else:
             right = mid
-    return lst[left] == value
+    if lst[left] == value:
+        return left
 
-def binary_contains_recursive_v2(lst, value):
+
+def binary_contains_recursive_left(lst, value):
     """
-    >>> binary_contains_recursive_v2([0, 1, 2, 4, 6, 7, 8], 3)
-    False
-    >>> binary_contains_recursive_v2([0, 1, 2, 4, 6, 7, 8], 4)
-    True
+    >>> binary_contains_recursive_left([0, 1, 2, 4, 6, 7, 8], 3)
+    >>> binary_contains_recursive_left([0, 1, 2, 4, 6, 7, 8], 4)
+    3
     """
     def _recur(left, right):
         if left < right:
@@ -100,10 +107,29 @@ def binary_contains_recursive_v2(lst, value):
             else:
                 return _recur(left, mid)
         else:
-            return lst[left] == value
+            if lst[left] == value:
+                return left
     return _recur(0, len(lst)-1)
+
+
+def binary_contains_right(lst, value):
+    """
+    >>> binary_contains_left([0, 1, 1], 1)
+    2
+    >>> binary_contains_left([0, 1], 0)
+    0
+    """
+    left, right = 0, len(lst) - 1
+    while left < right:
+        mid = (left + right + 1) // 2
+        if lst[mid] > value:
+            right = mid - 1
+        else:
+            left = mid
+    if lst[right] == value:
+        return right
 
 
 if __name__ == "__main__":
     print(binary_contains([0, 1, 2, 4, 6, 7, 8], 3))
-    print(binary_contains_v2([0, 1, 2, 4, 6, 7, 8], 3))
+    print(binary_contains_left([0, 1, 2, 4, 6, 7, 8], 3))
