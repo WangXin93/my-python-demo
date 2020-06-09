@@ -24,5 +24,5 @@ while True:
     print("Connection to {} established.".format(addr))
     # Send string to the client, here send bytes need to be encoded
     conn.send(bytes("Socket Programming in Python", "utf-8"))
-    # If server side socket close, the client side will also close
+    # Close server side socket
     conn.close()
