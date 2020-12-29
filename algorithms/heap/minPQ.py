@@ -1,4 +1,5 @@
 """ https://joshhug.gitbooks.io/hug61b/content/chap13/chap132.html
+https://web.stanford.edu/class/archive/cs/cs106b/cs106b.1206/lectures/heaps/
 """
 
 class minPQ(object):
@@ -59,7 +60,7 @@ class minPQ(object):
         if two < len(self.items):
             children.append(two)
         return children
-        
+
     def getParentIdx(self, idx):
         """
         0, 1, 2, 3, 4, 5, 6, 7
